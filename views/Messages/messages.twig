@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/Messages.js"></script>
+	</head>
+	<body>
+		<div class="messages">
+			{% for message in messages %}
+				<p>{{message.content}}</p>
+			{% endfor %}
+		</div>
+		<input type="text" id="message">
+		<button id="send">Envoyer</button>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		{% for message in messages %}
+			{{message.content}}
+		{% endfor %}
+		{% for conversation in conversations %}
+			<a href="/messages/{{conversation.id}}">{{conversation.id}}</a>
+		{% endfor %}
+	</body>
+</html>

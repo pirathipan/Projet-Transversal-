@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/messages/newconv" method="post">
+            <select name="user_id" id="">
+                {% for user in users %}
+                <option value="{{ user.id }}">{{ user.username }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Commencer une conversation">
+        </form>
+    </body>
+</html>

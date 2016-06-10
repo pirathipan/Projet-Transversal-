@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+	{% for annonce in annonces %}
+		<h1><a href="/annonce/read/{{ annonce.id }}">{{ annonce.title }}</a></h1>
+		<p>{{ annonce.description }}</p>	
+	{% endfor %}
+</body>
+</html>

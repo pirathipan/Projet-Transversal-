@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>User</title>
+    </head>
+    <body>
+        <?php if($params['Connected']){ ?>
+        <h1>Bonjour <?= $params['username']; ?></h1>
+        <?php } else{ ?>
+        <a href="/user/connect">Veuillez vous connecter</a>
+        <?php } ?>
+    </body>
+</html>

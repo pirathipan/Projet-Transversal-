@@ -1,0 +1,422 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+
+header{
+	width: 100%;
+}
+
+body{
+	font-family: 'Gravity';
+}
+
+.logo{
+	width: 30%;
+	margin: auto;
+	display: block;
+}
+
+.mobileMenu{
+	position: absolute;
+	width: 8%;
+	top: 2.3%;
+	left: 4%;
+}
+
+.entete{
+	background: url('../img/header_background.png');
+	background-size: 100%;
+	display: block;
+	width: 100%;
+	height: 1200px;
+}
+
+.search{
+	width: 80%;
+	height: 120px;
+	border: none;
+	display: block;
+	margin: auto;
+	padding-top: 600px;
+	.create{
+		width: 50%;
+		height: 80px;
+		padding: 20px;
+		border-radius: 20px 0px 0px 20px;
+		border: none;
+		border-right: 1px solid grey;
+		margin-right: 0;
+		font-size: 2rem;
+	}
+	.location{
+		width: 20%;
+		height: 74px;
+		padding: 23px;
+		border: none;
+		font-size: 2rem;
+		text-align: center;
+	}
+	.submit{
+		width: 15%;
+		height: 120px;
+		padding: 20px;
+		position: relative;
+		bottom: 7px;
+		background-color: #d84863;
+		background-image: url('../img/search.png');
+		background-repeat:no-repeat;
+		background-position: center;
+		border: none;
+		border-radius: 0px 20px 20px 0px;
+	}
+}
+
+.gradient{
+	z-index: 1;
+	background: #d54864;
+	background: -moz-linear-gradient(top,  #d54864 17%, #5354a1 89%);
+	background: -webkit-linear-gradient(top,  #d54864 17%,#5354a1 89%);
+	background: linear-gradient(to bottom,  #d54864 17%,#5354a1 89%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d54864', endColorstr='#5354a1',GradientType=0 );
+
+}
+
+.creative{
+	z-index: 5;
+	padding-top: 5%;
+	height: auto;
+	min-height: 300px;
+	padding-bottom: 5%;
+	h2{
+		color: white;
+		font-family: 'Gravity';
+		font-weight: 700;
+		font-size: 1.6rem;
+		text-align: center;
+		margin-bottom: 7%;
+	}
+	.creativePoint{
+		width: 24%;
+		height: 200px;
+		text-align: center;
+		display: inline-block;
+		color: white;
+		font-family: 'Gravity';
+		font-weight: 300;
+		float: left;
+		font-size: 1.7rem;
+		img{
+			margin-bottom: 4%;
+		}
+	}
+	.creativePoint:first-of-type{
+		margin-left: 8%;
+	}
+	.creativePoint:not(:last-of-type){
+		margin-right: 5%;
+	}
+}
+
+.passion{
+	color: white;
+	z-index: 5;
+	padding-top: 5%;
+	height: auto;
+	min-height: 300px;
+	padding-bottom: 5%;
+	h2{
+		font-family: 'Gravity';
+		font-weight: 700;
+		font-size: 1.6rem;
+		text-align: center;
+		margin-bottom: 7%;
+	}
+	.passionatePoint{
+		width: 24%;
+		height: 200px;
+		text-align: center;
+		display: inline-block;
+		font-family: 'Gravity';
+		font-weight: 300;
+		float: left;
+		font-size: 1.7rem;
+		img{
+			margin-bottom: 4%;
+		}
+	}
+	.passionatePoint:first-of-type{
+		margin-left: 8%;
+	}
+	.passionatePoint:not(:last-of-type){
+		margin-right: 5%;
+	}
+}
+
+.new{
+	width: 100%;
+	display: block;
+	height: 250px;
+	background-color: white;
+	text-align: center;
+	line-height: 250px;
+	h2{
+		font-family: 'Gravity';
+		font-weight: 300;
+		font-size: 3.2rem;
+		color: #5254a1;
+		margin-right: 33%;
+	}
+	.hrnew{
+		background-color: #5254a1;
+		width: 33%;
+		height: 2px;
+		border: none;
+		display: inline-block;
+	}
+	.hrnew:first-child{
+		margin-top: 125px;
+		float: left;
+	}
+	.hrnew:last-child{
+		float: right;
+		position: relative;
+		bottom: 130px;
+	}
+}
+
+
+.categories{
+	width: 100%;
+	display: block;
+	.garden{
+		width: 100%;
+		display: block;
+		height: 845px;
+		background-image: url('../img/graden.png');
+		position: relative;
+		text-align: center;
+		h2{
+			color: white;
+			font-size: 6rem;
+			font-family: 'Gravity';
+			font-weight: 700;
+			z-index: 20;
+		}
+		span{
+			color: white;
+			font-size: 4rem;
+		}
+	}
+	.decoration{
+		width: 100%;
+		display: block;
+		height: 845px;
+		background-image: url('../img/decoration.png');
+		position: relative;
+		text-align: center;
+		h2{
+			color: white;
+			font-size: 6rem;
+			font-family: 'Gravity';
+			font-weight: 700;
+			z-index: 20;
+		}
+		span{
+			color: white;
+			font-size: 4rem;
+		}
+	}
+	.couture{
+		width: 100%;
+		display: block;
+		height: 845px;
+		background-image: url('../img/couture.png');
+		position: relative;
+		text-align: center;
+		h2{
+			color: white;
+			font-size: 6rem;
+			font-family: 'Gravity';
+			font-weight: 700;
+			z-index: 20;
+		}
+		span{
+			color: white;
+			font-size: 4rem;
+		}
+	}
+	.filter::after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		top: 0; left:0; right: 0; bottom: 0;
+		height: auto;
+		background-color: rgba(115, 115, 115, 0.4);
+		z-index: 10;
+	}
+
+	.infos{
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    z-index: 30;
+	    font-family: 'Gravity';
+	    transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+.social{
+	width: 100%;
+	height: 400px;
+	background-color: #d84863;
+	text-align: center;
+	color: white;
+	padding-top: 70px;
+	padding-bottom: 40px;
+	letter-spacing: 1.1px;
+	h2{
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+	.input{
+		width: 45%;
+		border-radius: 10px 0px 0px 10px;
+		border: none;
+		font-size: 1.6rem;
+		margin-top: 40px;
+		height: 60px;
+	}
+	.submit{
+		width: 20%;
+		height: 62px;
+		border: none;
+		border-radius: 0px 10px 10px 0px;
+		font-size: 1.6rem;
+		font-weight: 300;
+		color: #d84863;
+		background-color: white;
+	}
+	.twitter{
+		width: 80%;
+		color: white;
+		font-size: 1.5rem;
+		float: left;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 10px 0px 0px 10px;
+		background-color: #00aced;
+		text-decoration: none;
+		display: inline-block;
+		margin: auto;
+		margin-right: 1px;
+		margin-top: 20px;
+	}
+	.twittericon{
+		margin-top: 20px;
+		width: 19%;
+		height: 60px;
+		border-radius: 0px 10px 10px 0px;
+		display: inline-block;
+		float: left;
+		background-color: #00aced;
+		background-image: url('../img/twitter.png') ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 70%;
+	}
+	.facebook{
+		width: 80%;
+		color: white;
+		font-size: 1.5rem;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 10px 0px 0px 10px;
+		background-color: #3b5998;
+		text-decoration: none;
+		display: inline-block;
+		float: left;
+		margin: auto;
+		margin-right: 1px;
+		margin-top: 20px;
+	}
+	.facebookicon{
+		width: 19%;
+		height: 60px;
+		border-radius: 0px 10px 10px 0px;
+		display: inline-block;
+		background-image: url('../img/facebook.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: fill;
+		background-color: #3b5998;
+		float: left;
+		margin-top: 20px;
+	}
+	.links{
+		width: 35%;
+		height: auto;
+		display: block;
+		margin: auto;
+		margin-top: 3%;
+	}
+}
+
+footer{
+	background-color: #383838;
+	height: auto;
+	color: white;
+	min-height: 550px;
+	padding-top: 4%;
+	text-align: center;
+	ul{
+		width: 70%;
+		margin: auto;
+		
+		display: block;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	li{
+		display: inline;
+		font-size: 2rem;
+		margin-right: 30px;
+		line-height: 100px;
+	}
+	.download{
+		font-size: 2rem;
+		border: 1px solid white;
+		display: block;
+		width: 40%;
+		margin: auto;
+		margin-top: 3%;
+		margin-bottom: 30px;
+		padding: 20px 40px 20px 40px;
+		border-radius: 10px;
+	}
+	.socialLink{
+		width: 80px;
+		height: 80px;
+		display: inline-block;
+		border: 1px solid white;
+		border-radius: 50%;
+		.facebooksocial{
+			width: 50px;
+		}
+		.instagramsocial{
+			width: 45px;
+		}
+		.pinterestsocial{
+			width: 37px;
+		}
+		.twittersocial{
+			width: 47px;
+		}
+	}
+	.copyright{
+		margin-top: 3%;
+		font-size: 0.8rem;
+	}
+}
